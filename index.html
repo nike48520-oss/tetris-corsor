@@ -24,14 +24,25 @@
 
         <section class="button-panel">
           <button id="start-btn" type="button">시작</button>
-          <button id="pause-btn" type="button" disabled>일시 정지</button>
           <button id="restart-btn" type="button">재시작</button>
         </section>
       </aside>
     </main>
 
+    <section class="touch-controls" aria-label="터치 조작">
+      <button type="button" class="touch-btn touch-btn--rotate" id="touch-rotate" aria-label="회전">↻</button>
+      <div class="touch-controls__d-pad">
+        <button type="button" class="touch-btn" id="touch-left" aria-label="왼쪽">←</button>
+        <button type="button" class="touch-btn" id="touch-down" aria-label="아래">↓</button>
+        <button type="button" class="touch-btn" id="touch-right" aria-label="오른쪽">→</button>
+      </div>
+      <button type="button" class="touch-btn touch-btn--drop" id="touch-drop" aria-label="즉시 낙하">낙하</button>
+    </section>
+
     <section class="controls-info">
       <h2>조작법</h2>
+      <p class="controls-note controls-note--keyboard">게임 시작 후 키보드로 조작합니다. 벽·블록과 충돌하면 이동·회전은 취소됩니다.</p>
+      <p class="controls-note controls-note--touch">모바일에서는 화면 하단 버튼으로 조작할 수 있습니다.</p>
       <ul>
         <li><kbd>←</kbd> (ArrowLeft) : 왼쪽 이동</li>
         <li><kbd>→</kbd> (ArrowRight) : 오른쪽 이동</li>
