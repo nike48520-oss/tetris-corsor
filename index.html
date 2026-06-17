@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테트리스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>테트리스</h1>
+    </header>
+
+    <main class="game-area">
+      <div id="board" class="board" aria-label="게임 보드"></div>
+
+      <aside class="side-panel">
+        <section class="score-panel">
+          <h2>점수</h2>
+          <p id="score" class="score-value">0</p>
+          <p id="game-status" class="game-status" aria-live="polite"></p>
+        </section>
+
+        <section class="button-panel">
+          <button id="start-btn" type="button">시작</button>
+          <button id="pause-btn" type="button" disabled>일시 정지</button>
+          <button id="restart-btn" type="button">재시작</button>
+        </section>
+      </aside>
+    </main>
+
+    <section class="controls-info">
+      <h2>조작법</h2>
+      <ul>
+        <li><kbd>←</kbd> (ArrowLeft) : 왼쪽 이동</li>
+        <li><kbd>→</kbd> (ArrowRight) : 오른쪽 이동</li>
+        <li><kbd>↓</kbd> (ArrowDown) : 한 칸 빠르게 내리기</li>
+        <li><kbd>↑</kbd> (ArrowUp) : 블록 회전</li>
+        <li><kbd>Space</kbd> : 즉시 낙하 (hard drop)</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
